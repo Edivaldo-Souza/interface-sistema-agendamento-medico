@@ -1,0 +1,10 @@
+<section class="signin-container">
+    <div class="form-container">
+        <form [formGroup]="signInForm" (submit)="login()">
+            <input type="text" id="email-sigin" placeholder="Email" formControlName="email">
+            <input type="password" id="password-signin" placeholder="Senha" formControlName="password">
+            <button id="signin-button" type="submit">Entrar</button>
+        </form>
+        <button id="signup-button" [routerLink]="['/signup']">Cadastre-se</button>
+    </div> 
+</section>
